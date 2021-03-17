@@ -7,7 +7,7 @@ Over the past month I've had a number of issues with my internet which affect my
 This collection of Dockerfiles aims to fix that by generating project documentation and hosting it locally via nginx. Documentation generated is _usually_ complete and comes with a search function powered by JS magic (don't ask me how it works, IDK).
 
 # HOW DOES THIS WORK?
-Each Dockerfile is multi-stage - the first stage will build the project documentation, which usually involves installing Sphinx, MKdocs or some other documentation generator, and the end result should be a collection of static html files. The second stage will take these files and serve them up via `nginx:stable`.
+Each Dockerfile is multi-stage - the first stage will compile the project documentation using Sphinx / MKDocs / whatever. The second stage will take these files and serve them up via `nginx:stable`.
 
 # HOW DO I USE THEM
 1. `docker build -t <your tag here> -f <pick from any one of the files available> .`
