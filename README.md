@@ -1,4 +1,4 @@
-# WHAT _IS_ THIS PROJECT?
+# WHAT IS THIS PROJECT?
 This is a collection of Dockerfiles each designed serve up compiled documentation for specific Python libraries. 
 
 # WHY DID YOU DO THIS?
