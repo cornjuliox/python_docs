@@ -65,4 +65,11 @@ services:
             context: ./entrypoint
         ports:
             - "80:80"
+        depends_on:
+            - local-scrapy-docs
+            - local-requests-docs
+            - local-pytest-docs
+            - local-pymongo-docs
+            - local-pydantic-docs
+            - local-motor-docs
 
