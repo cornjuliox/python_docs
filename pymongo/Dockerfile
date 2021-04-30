@@ -7,4 +7,4 @@ WORKDIR "doc"
 RUN ["make", "html"]
 
 From nginx:stable
-Copy --from=builder /pythonsrc/doc/_build/html /usr/share/nginx/html
+Copy --from=builder /pythonsrc/doc/_build/html /usr/share/nginx/html/pymongo

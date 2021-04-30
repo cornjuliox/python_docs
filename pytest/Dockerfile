@@ -10,4 +10,4 @@ RUN ["tox", "-e", "docs"]
 # RUN ["pip", "install", "-r", "requirements.txt"]
 
 FROM nginx:stable
-COPY --from=builder /pythonsrc/doc/en/_build/html /usr/share/nginx/html
+COPY --from=builder /pythonsrc/doc/en/_build/html /usr/share/nginx/html/pytest

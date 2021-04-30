@@ -18,4 +18,4 @@ RUN ["pip", "install", "mkdocs-markdownextradata-plugin"]
 RUN ["mkdocs", "build"]
 
 FROM nginx:stable
-COPY --from=builder /pythonsrc/site /usr/share/nginx/html
+COPY --from=builder /pythonsrc/site /usr/share/nginx/html/pydantic

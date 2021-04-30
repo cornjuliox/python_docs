@@ -9,4 +9,4 @@ RUN ["pip", "install", "-r", "docs-requirements.txt"]
 RUN ["make", "html"]
 
 FROM nginx:stable
-COPY --from=builder /pythonsrc/doc/_build/html /usr/share/nginx/html
+COPY --from=builder /pythonsrc/doc/_build/html /usr/share/nginx/html/motor

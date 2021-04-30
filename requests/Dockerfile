@@ -10,4 +10,4 @@ WORKDIR "docs/"
 RUN ["make", "html"]
 
 FROM nginx:stable
-COPY --from=builder /pythonsrc/docs/_build/html /usr/share/nginx/html
+COPY --from=builder /pythonsrc/docs/_build/html /usr/share/nginx/html/requests

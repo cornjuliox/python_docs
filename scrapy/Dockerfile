@@ -9,5 +9,5 @@ RUN ["pip", "install", "-r", "requirements.txt"]
 RUN ["make", "html"]
 
 FROM nginx:stable
-COPY --from=builder /pythonsrc/docs/build/html /usr/share/nginx/html
+COPY --from=builder /pythonsrc/docs/build/html /usr/share/nginx/html/scrapy
 

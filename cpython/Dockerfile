@@ -8,4 +8,4 @@ RUN ["make", "venv"]
 RUN ["make", "html"]
 
 FROM nginx:stable
-COPY --from=builder /pythonsrc/Doc/build/html /usr/share/nginx/html
+COPY --from=builder /pythonsrc/Doc/build/html /usr/share/nginx/html/python
