@@ -1,0 +1,68 @@
+version: "2"
+services:
+    local-aiohttp-docs:
+        build: 
+            context: ./aiohttp
+        expose:
+            - "80"
+
+    local-arrow-docs:
+        build: 
+            context: ./arrow
+        expose:
+            - "80"
+
+    local-python-docs:
+        build: 
+            context: ./cpython
+        expose:
+            - "80"
+
+    local-fastapi-docs:
+        build:
+            context: ./fastapi
+        expose:
+            - "80"
+    
+    local-motor-docs:
+        build: 
+            context: ./motor
+        expose:
+            - "80"
+    
+    local-pydantic-docs:
+        build: 
+            context: ./pydantic
+        expose:
+            - "80"
+    
+    local-pymongo-docs:
+        build: 
+            context: ./pymongo
+        expose:
+            - "80"
+
+    local-pytest-docs:
+        build: 
+            context: ./pytest
+        expose:
+            - "80"
+
+    local-requests-docs:
+        build: 
+            context: ./pytest
+        expose:
+            - "80"
+
+    local-scrapy-docs:
+        build: 
+            context: ./scrapy
+        expose:
+            - "80"
+
+    entrypoint:
+        build: 
+            context: ./entrypoint
+        ports:
+            - "80:80"
+
